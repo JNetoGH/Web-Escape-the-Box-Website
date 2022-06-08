@@ -37,12 +37,13 @@ il, p {
 /*************************************************************/
 
 header {
-    padding: 0 var(--conatainerLateralPadding) var(--conatainerVerticalPadding) ;
-
+    padding: 0 var(--conatainerLateralPadding) var(--conatainerVerticalPadding);
 }
 header img {
     width: 6%;
-    display: inline-block;
+}
+header img, header p {
+    display: inline;
 }
 
 /*************************************************************/
@@ -51,6 +52,11 @@ header img {
 .introduction_container {
     padding: var(--conatainerVerticalPadding)  var(--conatainerLateralPadding);
 }
+
+.main_header h1, .main_header p {
+    display: inline;
+}
+
 #container-de-listas-de-objetivos {
     margin-top: 20px;
     display: flex;
@@ -88,18 +94,9 @@ header img {
     padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
 }
 
-/*************************************************************/
-/*************************************************************/
-
-footer p {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-}
-
 /****************      DESCRIPTIVE IMG      ******************/
 /*************************************************************/
+
 .descriptive_img {
     margin-top: var(--conatainerVerticalPadding);
     background-color: lightskyblue;
@@ -118,4 +115,14 @@ footer p {
     margin-left: 50px;
     margin-top: 50px;
     margin-right: 50px;
+}
+
+/*************************************************************/
+/*************************************************************/
+
+footer p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
