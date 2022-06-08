@@ -108,12 +108,8 @@ header img, header p {
     margin-top: 40px;
     margin-bottom: 40px
 }
-/*distancia do título da molecule para o conteúdo*/
+/*distancia do título da molécula para o conteúdo*/
 .game_info_content_molecule h2 {
-    margin-bottom: 20px;
-}
-/*distancia do sub-título da molecule para o conteúdo*/
-.game_info_content_molecule h3 {
     margin-bottom: var(--defaultMarginFromHeader);
 }
 
@@ -146,6 +142,9 @@ header img, header p {
     /*distancia do código pro próximo h3*/
     margin-bottom: var(--defaultMarginFromHeader);
     border-radius: 15px;
+}
+embed {
+    background-color: #ffff99;
 }
 
 /*************************************************************/
