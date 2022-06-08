@@ -182,7 +182,6 @@ footer a {
 /*Portrait*/
 @media only screen and (orientation : portrait) {
     :root {
-
         --conatainerLateralPadding: 4vh;
         --conatainerVerticalPadding: 5vw;
 
