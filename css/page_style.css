@@ -37,6 +37,7 @@ h3 {
 il, p {
     font-size:  var(--defaultTextSize);
     color: #BFBFB7;
+    line-height: 2.5vh;
 }
 
 
@@ -153,12 +154,21 @@ embed {
 footer {
     padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
 }
+/*distancia da label pros icons*/
+#social_media_label {
+    margin-bottom: var(--defaultMarginFromHeader);
+}
+/*tira o sublinhado dos icons*/
+footer a {
+    text-decoration: none;
+}
 #dev_by {
-    display: inline;
     float: right;
+    text-align: right;
+    vertical-align: center;
 }
 .social_media_icon_container {
-    margin-top: var(--defaultMarginFromHeader);
+    display: inline-block;
 }
 .social_media_icon {
     width: 2vw;
