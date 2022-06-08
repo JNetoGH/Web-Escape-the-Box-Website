@@ -10,7 +10,7 @@
   <body>
     <div id="unity-container" class="unity-desktop">
       <!--pra dar crop em tela mobile, fica em 100% da tela - padding padrão e fica com a bordinha redonda -->
-      <canvas id="unity-canvas" style="border-radius: 15px; width: 100%" height=600></canvas>
+      <canvas id="unity-canvas" style="border-radius: 15px; width: 100% "  height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -21,7 +21,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Obstacle Game</div>
+        <div id="unity-build-title">Collider Game</div>
       </div>
     </div>
     <script>
@@ -64,7 +64,7 @@
         codeUrl: buildUrl + "/Collisions Test Build (WEB).wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Obstacle Game",
+        productName: "Collider Game",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };

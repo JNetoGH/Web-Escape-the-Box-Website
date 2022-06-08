@@ -148,9 +148,6 @@ header img, header p {
     margin-bottom: var(--defaultMarginFromHeader);
     border-radius: 15px;
 }
-embed {
-    background-color: #ffff99;
-}
 
 /*************************************************************/
 /*************************************************************/
@@ -193,15 +190,20 @@ footer a {
 
         --defaultLineHeight: 2vh;
 
-        --socialMediaIconsSize: 3.5vh
+        --socialMediaIconsSize: 3vh;
     }
+
 
     header img {
         width: 25%;
     }
 
+    .game_info hr {
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+
     .descriptive_img {
-        background-color: lightskyblue;
         border-radius: 15px;
         display: block;
     }
@@ -212,9 +214,12 @@ footer a {
     }
     .descriptive_img p {
         display: block;
-        color: black;
         font-size: 2vh;
         padding: 10% 0;
+    }
+
+    #dev_by {
+        font-size: 1.4vh;
     }
 
 }
