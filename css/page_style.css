@@ -150,10 +150,17 @@ embed {
 /*************************************************************/
 /*************************************************************/
 
-footer p {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    /*padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);*/
+footer {
+    padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
+}
+#dev_by {
+    display: inline;
+    float: right;
+}
+.social_media_icon_container {
+    margin-top: var(--defaultMarginFromHeader);
+}
+.social_media_icon {
+    width: 2vw;
+    margin-right: var(--defaultMarginFromHeader);
 }
