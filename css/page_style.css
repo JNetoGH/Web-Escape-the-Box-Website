@@ -2,11 +2,15 @@
     --myLightGray: #F4F4F4;
     --mywhite: white;
     --myblack: #27282C;
+
     --conatainerLateralPadding: 10vw;
-    --conatainerVerticalPadding: 4vh;
+    --conatainerVerticalPadding: 5vh;
+
     --defaulth1: 4vw;
     --defaulth2: 2vw;
-    --defaultTopMarginFromHeader: 5px;
+    --defaulth3: 1.25vw;
+    --defaultTextSize: 1vw;
+    --defaultMarginFromHeader: 1vh;
 }
 html {
     font-size: 62.5%;
@@ -27,8 +31,11 @@ h1 {
 h2 {
     font-size: var(--defaulth2);
 }
+h3 {
+    font-size: var(--defaulth3);
+}
 il, p {
-    font-size: 1.75rem;
+    font-size:  var(--defaultTextSize);
     color: #BFBFB7;
 }
 
@@ -46,7 +53,7 @@ header img, header p {
     display: inline;
 }
 
-/*************************************************************/
+/*****************       INTRODUCTION      *******************/
 /*************************************************************/
 
 .introduction_container {
@@ -61,6 +68,8 @@ header img, header p {
     margin-top: 20px;
     display: flex;
 }
+
+/*distancia entre as listas*/
 .lista-de-objetos {
     margin-left: 30px;
 }
@@ -69,10 +78,10 @@ header img, header p {
     margin-left: 0;
 }
 .lista-de-objetos ul {
-    margin-top: var(--defaultTopMarginFromHeader);
+    margin-top: var(--defaultMarginFromHeader);
 }
 
-/*************************************************************/
+/*****************          THE GAME       *******************/
 /*************************************************************/
 
 .game_container {
@@ -85,7 +94,7 @@ header img, header p {
     height: 700px;
 }
 
-/*************************************************************/
+/****************          GAME INFO        ******************/
 /*************************************************************/
 
 .game_info {
@@ -93,28 +102,52 @@ header img, header p {
     color: black;
     padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
 }
+/*margem do separador*/
+.game_info hr {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+/*distancia do título da molecule para o conteúdo*/
+.game_info_content_molecule h2 {
+    margin-bottom: 20px;
+}
+/*distancia do sub-título da molecule para o conteúdo*/
+.game_info_content_molecule h3 {
+    margin-bottom: var(--defaultMarginFromHeader);
+}
 
-/****************      DESCRIPTIVE IMG      ******************/
+
+/**************  GAME INFO (DESCRIPTIVE IMG) *****************/
 /*************************************************************/
 
 .descriptive_img {
-    margin-top: var(--conatainerVerticalPadding);
     background-color: lightskyblue;
     display: flex;
-    border-radius: 25px;
-
+    border-radius: 15px;
 }
 .descriptive_img img{
     width: 25vw;
     display: inline;
-    border-radius: 25px 0 0 25px ;
+    border-radius: 15px 0 0 15px ;
 }
 .descriptive_img p {
     color: black;
     font-size: 1.5vw;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin: auto 50px;
+}
+
+
+/****************      GAME INFO (CODE)     ******************/
+/*************************************************************/
+
+code {
+    background-color: var(--myblack);
+    color: white;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    font-size:  var(--defaultTextSize);
+    border-radius: 15px;
 }
 
 /*************************************************************/
@@ -125,4 +158,5 @@ footer p {
     font-size: 2rem;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
+    /*padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);*/
 }
