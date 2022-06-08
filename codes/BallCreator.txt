@@ -1,0 +1,14 @@
+using UnityEngine;
+
+public class BallCreator : MonoBehaviour
+{
+    public GameObject ball;
+    public GameObject player;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1")) Instantiate(ball);
+        ball.transform.position = new Vector3(player.transform.position.x, 10, player.transform.position.z);
+    }
+}

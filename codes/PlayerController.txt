@@ -1,0 +1,49 @@
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    private Rigidbody _rgb;
+    
+    // MOVEMENT
+    public float movementSpeed = 8;
+    private float _xAxisInput;
+    private float _zAxisInput;
+    private Vector3 _positionIncrement;
+    
+    // ROTATION 
+    public float rotationSpeed = 50;
+    private float _QRKeysInput;
+    
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        _rgb = GetComponent<Rigidbody>();
+
+    }
+
+    private Vector3 nullVar;
+    private void MoveWithRigidBody()
+    {
+        _xAxisInput = Input.GetAxis("Horizontal");
+        _zAxisInput = Input.GetAxis("Vertical");
+        _positionIncrement = new Vector3(_xAxisInput, 0, _zAxisInput);
+        _positionIncrement *= movementSpeed;
+        _rgb.velocity = _positionIncrement;
+    }
+
+    private void RotateWithRigidBody()
+    {
+        _QRKeysInput = Input.GetAxis("Rotate Player");
+        Quaternion rotationIncrement = Quaternion.Euler(0, _QRKeysInput * rotationSpeed * Time.fixedDeltaTime, 0);
+        _rgb.MoveRotation(_rgb.rotation * rotationIncrement);
+    }
+    
+    private void FixedUpdate()
+    {
+        MoveWithRigidBody();
+        RotateWithRigidBody();
+        
+    }
+
+}

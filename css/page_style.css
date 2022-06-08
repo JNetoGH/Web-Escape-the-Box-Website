@@ -139,17 +139,16 @@ header img, header p {
 
 /****************      GAME INFO (CODE)     ******************/
 /*************************************************************/
-
-code {
-    background-color: var(--myblack);
-    color: white;
-    border: 1px solid #999;
-    display: block;
-    padding: 20px;
-    font-size:  var(--defaultTextSize);
+.code {
+    width: 100%;
+    height: 25vh;
+    /*distancia do código pro próximo h3*/
+    margin-bottom: var(--defaultMarginFromHeader);
     border-radius: 15px;
 }
+.code {
 
+}
 /*************************************************************/
 /*************************************************************/
 
