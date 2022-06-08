@@ -92,6 +92,7 @@ header img, header p {
     border-style: none;
     width: 100%;
     height: 700px;
+
 }
 
 /****************          GAME INFO        ******************/
@@ -136,9 +137,9 @@ header img, header p {
     margin: auto 50px;
 }
 
-
 /****************      GAME INFO (CODE)     ******************/
 /*************************************************************/
+
 .code {
     width: 100%;
     height: 25vh;
@@ -146,9 +147,7 @@ header img, header p {
     margin-bottom: var(--defaultMarginFromHeader);
     border-radius: 15px;
 }
-.code {
 
-}
 /*************************************************************/
 /*************************************************************/
 
