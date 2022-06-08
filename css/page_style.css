@@ -1,0 +1,121 @@
+:root {
+    --myLightGray: #F4F4F4;
+    --mywhite: white;
+    --myblack: #27282C;
+    --conatainerLateralPadding: 10vw;
+    --conatainerVerticalPadding: 4vh;
+    --defaulth1: 4vw;
+    --defaulth2: 2vw;
+    --defaultTopMarginFromHeader: 5px;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--myblack);
+    color: var(--mywhite);
+}
+
+/****************           COMMON          ******************/
+/*************************************************************/
+
+h1 {
+    font-size: var(--defaulth1);
+}
+h2 {
+    font-size: var(--defaulth2);
+}
+il, p {
+    font-size: 1.75rem;
+    color: #BFBFB7;
+}
+
+
+/****************           HEADER          ******************/
+/*************************************************************/
+
+header {
+    padding: 0 var(--conatainerLateralPadding) var(--conatainerVerticalPadding) ;
+
+}
+header img {
+    width: 6%;
+    display: inline-block;
+}
+
+/*************************************************************/
+/*************************************************************/
+
+.introduction_container {
+    padding: var(--conatainerVerticalPadding)  var(--conatainerLateralPadding);
+}
+#container-de-listas-de-objetivos {
+    margin-top: 20px;
+    display: flex;
+}
+.lista-de-objetos {
+    margin-left: 30px;
+}
+/*tira a margem da primeira lista*/
+#priemira-lista-de-objetos {
+    margin-left: 0;
+}
+.lista-de-objetos ul {
+    margin-top: var(--defaultTopMarginFromHeader);
+}
+
+/*************************************************************/
+/*************************************************************/
+
+.game_container {
+    background-color: var(--mywhite);
+    padding: var(--conatainerVerticalPadding); var(--conatainerLateralPadding);
+}
+.unityframe {
+    border-style: none;
+    width: 100%;
+    height: 700px;
+}
+
+/*************************************************************/
+/*************************************************************/
+
+.game_info {
+    background-color: var(--myLightGray);
+    color: black;
+    padding: var(--conatainerVerticalPadding) var(--conatainerLateralPadding);
+}
+
+/*************************************************************/
+/*************************************************************/
+
+footer p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+/****************      DESCRIPTIVE IMG      ******************/
+/*************************************************************/
+.descriptive_img {
+    margin-top: var(--conatainerVerticalPadding);
+    background-color: lightskyblue;
+    display: flex;
+    border-radius: 25px;
+
+}
+.descriptive_img img{
+    width: 25vw;
+    display: inline;
+    border-radius: 25px 0 0 25px ;
+}
+.descriptive_img p {
+    color: black;
+    font-size: 1.5vw;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
