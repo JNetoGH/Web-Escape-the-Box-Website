@@ -8,7 +8,6 @@
 
     --defaulth1: 4vw;
     --defaulth2: 2vw;
-    --defaulth3: 1.25vw;
     --defaultTextSize: 1vw;
     --defaultMarginFromHeader: 1vh;
 
@@ -34,9 +33,6 @@ h1 {
 }
 h2 {
     font-size: var(--defaulth2);
-}
-h3 {
-    font-size: var(--defaulth3);
 }
 il, p {
     font-size:  var(--defaultTextSize);
@@ -89,6 +85,10 @@ header img, header p {
 /*****************          THE GAME       *******************/
 /*************************************************************/
 
+#legenda_especial{
+    color: black;
+    margin-bottom: var(--defaultMarginFromHeader);
+}
 .game_container {
     background-color: var(--mywhite);
     padding: var(--conatainerVerticalPadding); var(--conatainerLateralPadding);
@@ -135,7 +135,6 @@ header img, header p {
 }
 .descriptive_img p {
     color: black;
-    font-size: 1.5vw;
     margin: auto 50px;
 }
 
@@ -186,12 +185,11 @@ footer a {
 
         --defaulth1: 4vh;
         --defaulth2: 2vh;
-        --defaulth3: 1.25vh;
-        --defaultTextSize: 1.5vh;
-        --defaultMarginFromHeader: 1vw;
+        --defaultTextSize: 1.8vh;
 
         --defaultLineHeight: 2vh;
 
+        --defaultMarginFromHeader: 1vw;
         --socialMediaIconsSize: 3vh;
     }
 

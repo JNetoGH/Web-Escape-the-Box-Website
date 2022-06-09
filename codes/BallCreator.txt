@@ -27,4 +27,5 @@ public class BallCreator : MonoBehaviour
             ball.transform.position = new Vector3(player.transform.position.x, 10, player.transform.position.z);
         }
     }
+
 }
