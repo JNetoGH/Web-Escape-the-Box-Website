@@ -92,12 +92,13 @@ header img, header p {
 .game_container {
     background-color: var(--mywhite);
     padding: var(--conatainerVerticalPadding); var(--conatainerLateralPadding);
+    text-align: center;
 }
 .unityframe {
-    border-style: none;
-    width: 100%;
-    height: 700px;
-
+    overflow: hidden;
+    border-radius: 15px;
+    width: 90%;
+    height: 650px;
 }
 
 /****************          GAME INFO        ******************/
@@ -178,6 +179,7 @@ footer a {
 
 /*Portrait*/
 @media only screen and (orientation : portrait) {
+
     :root {
         --conatainerLateralPadding: 4vh;
         --conatainerVerticalPadding: 5vw;
@@ -193,14 +195,13 @@ footer a {
         --socialMediaIconsSize: 3vh;
     }
 
-
     header img {
         width: 25%;
     }
 
     .game_info hr {
-        margin-top: 20px;
-        margin-bottom: 20px
+        margin-top: 30px;
+        margin-bottom: 30px
     }
 
     .descriptive_img {
@@ -222,4 +223,8 @@ footer a {
         font-size: 1.4vh;
     }
 
+    .unityframe {
+        width: 90%;
+        height: 80vh;
+    }
 }

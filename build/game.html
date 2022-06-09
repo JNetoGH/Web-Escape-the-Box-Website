@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Obstacle Game</title>
+    <title>Unity WebGL Player | Collider Game</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <!--pra dar crop em tela mobile, fica em 100% da tela - padding padrão e fica com a bordinha redonda -->
-      <canvas id="unity-canvas" style="border-radius: 15px; width: 100% "  height=600></canvas>
+      <canvas id="unity-canvas" style="border-radius: 15px"  width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,13 +56,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Collisions Test Build (WEB).loader.js";
+      var loaderUrl = buildUrl + "/Collisions Test Build (WEB v.2.2).loader.js";
       var config = {
-        dataUrl: buildUrl + "/Collisions Test Build (WEB).data.unityweb",
-        frameworkUrl: buildUrl + "/Collisions Test Build (WEB).framework.js.unityweb",
-        codeUrl: buildUrl + "/Collisions Test Build (WEB).wasm.unityweb",
+        dataUrl: buildUrl + "/Collisions Test Build (WEB v.2.2).data.unityweb",
+        frameworkUrl: buildUrl + "/Collisions Test Build (WEB v.2.2).framework.js.unityweb",
+        codeUrl: buildUrl + "/Collisions Test Build (WEB v.2.2).wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Euro Studios",
         productName: "Collider Game",
         productVersion: "0.1",
         showBanner: unityShowBanner,
